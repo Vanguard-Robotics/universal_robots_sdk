@@ -10,66 +10,62 @@
 function setReleaseNumber() {
 case $1 in
 1)
-	myapiversion=1.15.0
-	myReleaseBuildNumber=1.15.0
-;;
-2)
 	myapiversion=1.14.0
 	myReleaseBuildNumber=1.14.0
 ;;
-3)
+2)
 	myapiversion=1.13.0
 	myReleaseBuildNumber=1.13.0
 ;;
-4)
+3)
 	myapiversion=1.12.0
 	myReleaseBuildNumber=1.12.0
 ;;
-5)
+4)
   myapiversion=1.11.0
 	myReleaseBuildNumber=1.11.0
 ;;
-6)
+5)
 	myapiversion=1.10.0
 	myReleaseBuildNumber=1.10.0
 ;;
-7)
+6)
 	myapiversion=1.9.0
 	myReleaseBuildNumber=1.9.0
 ;;
-8)
+7)
 	myapiversion=1.8.0
 	myReleaseBuildNumber=1.8.0
 ;;
-9)
+8)
 	myapiversion=1.7.0
 	myReleaseBuildNumber=1.7.0
 ;;
-10)
+9)
 	myapiversion=1.6.0
 	myReleaseBuildNumber=1.6.0
 ;;
-11)
+10)
 	myapiversion=1.5.0
 	myReleaseBuildNumber=1.5.0
 ;;
-12)
+11)
 	myapiversion=1.4.0
 	myReleaseBuildNumber=1.4.0
 ;;
-13)
+12)
 	myapiversion=1.3.0
 	myReleaseBuildNumber=1.3.0
 ;;
-14)
+13)
 	myapiversion=1.2.56
 	myReleaseBuildNumber=1.2.56
 ;;
-15)
+14)
 	myapiversion=1.1.0
 	myReleaseBuildNumber=1.1.0-69
 ;;
-16)
+15)
 	myapiversion=1.0.0
 	myReleaseBuildNumber=1.0.0.30
 ;;
@@ -155,26 +151,25 @@ case $1 in
     API_VERSIONS+=(13 "1.0.0 (PolyScope SW 3.3.0 or newer required)" )
 ;;
 2)
-    softwareVersion=5.18.0
+    softwareVersion=5.15.0
     compatibilitytext="Only compatible with e-Series"
     cb3compatible=false
     eseriescompatible=true
-    API_VERSIONS+=( 1 "1.15.0 (PolyScope SW ${softwareVersion} or newer required)" )
-    API_VERSIONS+=( 2 "1.14.0 (PolyScope SW 5.15.0 or newer required)" )
-    API_VERSIONS+=( 3 "1.13.0 (PolyScope SW 5.11.0 or newer required)" )
-    API_VERSIONS+=( 4 "1.12.0 (PolyScope SW 5.10.0 or newer required)" )
-    API_VERSIONS+=( 5 "1.11.0 (PolyScope SW 5.9.0 or newer required)" )
-    API_VERSIONS+=( 6 "1.10.0 (PolyScope SW 5.8.0 or newer required)" )
-    API_VERSIONS+=( 7 "1.9.0 (PolyScope SW 5.6.0 or newer required)")
-    API_VERSIONS+=( 8 "1.8.0 (PolyScope SW 5.5.0 or newer required)" )
-    API_VERSIONS+=( 9 "1.7.0 (PolyScope SW 5.4.0 or newer required)" )
-    API_VERSIONS+=( 10 "1.6.0 (PolyScope SW 5.3.0 or newer required)" )
-    API_VERSIONS+=( 11 "1.5.0 (PolyScope SW 5.2.0 or newer required)" )
-    API_VERSIONS+=( 12 "1.4.0 (PolyScope SW 5.1.0 or newer required)" )
-    API_VERSIONS+=( 13 "1.3.0 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 14 "1.2.56 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 15 "1.1.0 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 16 "1.0.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=( 1 "1.14.0 (PolyScope SW ${softwareVersion} or newer required)" )
+    API_VERSIONS+=( 2 "1.13.0 (PolyScope SW 5.11.0 or newer required)" )
+    API_VERSIONS+=( 3 "1.12.0 (PolyScope SW 5.10.0 or newer required)" )
+    API_VERSIONS+=( 4 "1.11.0 (PolyScope SW 5.9.0 or newer required)" )
+    API_VERSIONS+=( 5 "1.10.0 (PolyScope SW 5.8.0 or newer required)" )
+    API_VERSIONS+=( 6 "1.9.0 (PolyScope SW 5.6.0 or newer required)")
+    API_VERSIONS+=( 7 "1.8.0 (PolyScope SW 5.5.0 or newer required)" )
+    API_VERSIONS+=( 8 "1.7.0 (PolyScope SW 5.4.0 or newer required)" )
+    API_VERSIONS+=( 9 "1.6.0 (PolyScope SW 5.3.0 or newer required)" )
+    API_VERSIONS+=( 10 "1.5.0 (PolyScope SW 5.2.0 or newer required)" )
+    API_VERSIONS+=( 11 "1.4.0 (PolyScope SW 5.1.0 or newer required)" )
+    API_VERSIONS+=(12 "1.3.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=(13 "1.2.56 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=(14 "1.1.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=(15 "1.0.0 (PolyScope SW 5.0.0 or newer required)" )
 ;;
 3)
     compatibilitytext="Compatible with CB3 and e-Series"
@@ -199,9 +194,9 @@ esac
 
 mygroupid="com.yourcompany"
 myartifactid="thenewapp"
-myapiversion="1.15.0"
+myapiversion="1.14.0"
 
-myReleaseBuildNumber=1.15.0
+myReleaseBuildNumber=1.14.0
 
 compatibilitytext="Compatible with CB3 and e-Series"
 compatibilitytag=""
@@ -238,10 +233,18 @@ if [[ -z $1 ]] || [[ "$1" != "-t" ]]; then
 		exit 1
 	fi
 
-	IFS='¤' read -ra VAL_ARRAY1 <<< $VALUES
+	IFS='¤' read -r -a VAL_ARRAY1 <<< "$VALUES"
+	echo "Raw VALUES: '$VALUES'"
+	echo "Parsed array:"
+	for i in "${!VAL_ARRAY1[@]}"; do
+	echo "  VAL_ARRAY1[$i] = '${VAL_ARRAY1[$i]}'"
+	done
+
+	echo "GroupId: '${VAL_ARRAY1[0]}'"
+	echo "ArtifactId: '${VAL_ARRAY1[1]}'"
 
 	mygroupid=${VAL_ARRAY1[0]}
-	myartifactid=${VAL_ARRAY1[1]}
+	myartifactid=${VAL_ARRAY1[2]}
 
     while [[  -z ${compatibilitytag} ]] ; do
 		exec 3>&1
@@ -299,11 +302,12 @@ echo "  API:            $myapiversion"
 echo "  Compatibility:  $compatibilitytext"
 
 
+
 mvn archetype:generate \
   -DinteractiveMode=false \
   -DarchetypeGroupId=com.ur.urcap \
   -DarchetypeArtifactId=archetype \
-  -DarchetypeVersion=1.15.0 \
+  -DarchetypeVersion=1.17.0 \
   "-Dpackage=$mypackage.impl" \
   "-DgroupId=$mygroupid" \
   "-DartifactId=$myartifactid" \
