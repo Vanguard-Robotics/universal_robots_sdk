@@ -18,6 +18,6 @@
 				"yzhang.markdown-all-in-one"]
 			}	
       },
-	  "postStartCommand": "sudo chmod +x newURCap.sh && chmod +x startURSim.sh"
+	"postStartCommand": "cp startURSim.sh /tmp/startURSim.sh && cp newURCap.sh /tmp/newURCap.sh && chmod +x /tmp/startURSim.sh /tmp/newURCap.sh"
 }
 
